@@ -1,3 +1,12 @@
+select months*salary
+,count(name)
+from employee
+group by months*salary
+order by 1 DESC
+limit 1
+
+-- OR
+
 select
 earnings, count(*)
 from(
